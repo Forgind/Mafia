@@ -11,7 +11,7 @@ public class Cop extends Player {
 	@Override
 	public void takeEffect(Player p, boolean action) {
 		try {
-			if (p.isMafia)
+			if (p.isMafia && !(p instanceof Prostitute))
 				super.receiveMessage(p.name + " is in the mafia.");
 			else
 				super.receiveMessage(p.name + " is not in the mafia.");

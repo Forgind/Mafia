@@ -22,7 +22,6 @@ public class Client {
 
 	public static void main(String[] args) throws InterruptedException, IOException {
 		startConnection("127.0.0.1", 12365);
-		//startConnection("71.46.74.181", 12365);
 		Scanner scan = new Scanner(System.in);
 		while (true) {
 			String inp = in.readLine();
